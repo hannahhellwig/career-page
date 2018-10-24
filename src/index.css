@@ -1,0 +1,461 @@
+@font-face {
+  font-family: SFProHeadline;
+  src: url(/font/SF-Pro-Text-Medium.otf);
+}
+
+@font-face {
+  font-family: SFProText;
+  src: url(/font/SF-Pro-Text-Regular.otf);
+}
+
+/* @import url('https://fonts.googleapis.com/css?family=Roboto:400,500'); */
+*{
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  /* font-family: 'Roboto', sans-serif; */
+  font-family: SFProHeadline;
+}
+
+h1{
+  font-size: 48px;
+  /* font-family: sans-serif; */
+
+}
+
+/* colleague feed and instagram headline*/
+h2 {
+  font-size: 26px;
+}
+
+/* section headline startpage and jobOpeningBody */
+h3 {
+  font-size: 24px;
+  margin: 15px 0 5px 0;
+  padding: 0;
+}
+
+/* colleagues name  */
+h5 {
+}
+
+/* joblocation */
+h6 {
+  font-size: 12px;
+  margin: 0;
+}
+
+p {
+ font-size: 17px;
+ font-weight: 400;
+ line-height: 1.3;
+ margin: 5px 0 10px;
+ font-family: SFProText;
+}
+
+.pageContent {
+  box-sizing: border-box;
+  padding: 0 15%;
+  display: flex;
+  flex-direction: column;
+  min-height: 550px;
+}
+
+/* ------------------------HEADER------------------------ */
+header{
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #F5F6F6;
+  height: auto;
+  width: 100%;
+  margin: 0;
+  padding: 0 30px;
+}
+
+.logoContainer img{
+  width: 100px;
+  height: auto;
+  padding: 15px 0;
+}
+
+.headerLinks{
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+}
+
+.headerLinks a{
+  text-decoration: none;
+  color: #000000;
+  font-size: 14px;
+  font-family: SFProText;
+}
+
+.headerLinks a:hover{
+  text-decoration: underline;
+}
+/* ------------------------StartPage------------------------ */
+
+.heroContainer {
+  background-image: url(/images/comprendLife2.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right;
+  width: 100%;
+  height: 550px;
+  margin: 0;
+  padding: 0 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.startPageTextContainer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 100px 15%;
+}
+
+.textSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+  margin: 0 25px;
+  word-spacing: 2px;
+  letter-spacing: 0.5px;
+  text-align: center;
+}
+
+.toAllJobsContainer {
+  background-image: url(/images/comprendLife4.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  height: 400px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.instagramContainer {
+  margin: 100px 15%;
+}
+
+.instaFeedContainer {
+  display: flex;
+  flex-direction: row;
+  width: auto;
+  overflow: scroll;
+}
+
+.instafeed__item__caption {
+  display: none;
+}
+
+/* ------------------------JobListingPage------------------------ */
+
+.jobListingText{
+  width: 45%;
+}
+
+.jobTable {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 190px;
+}
+
+.jobHeadlines {
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid grey;
+  font-weight: bold;
+  padding: 20px 0;
+}
+
+.jobHeadlines p {
+  font-family: SFProHeadline;
+}
+
+.jobList {
+  display: flex;
+  flex-direction: row;
+  border: none;
+  border-bottom: 1px solid grey;
+  padding: 20px 0;
+  height: auto;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.jobList a {
+  color: #000;
+  text-decoration: none;
+}
+
+.jobList a:hover {
+  text-decoration: underline;
+}
+
+.jobHeadlineTitle {
+  min-width: 500px;
+  height: auto;
+}
+
+.jobHeadelineDepartment {
+  width: 200px;
+  height: auto;
+}
+
+.jobHeadlineCity {
+  width: 200px;
+  height: auto;
+}
+
+.filterButtonsContainer{
+  margin: 15px 0;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.filterButtons{
+ background-color: #b8008b;
+ color: #fff;
+ outline: none;
+ cursor: pointer;
+ text-transform: uppercase;
+ border: none;
+ margin: 10px 40px 0 0;
+ border-radius: 40px;
+ padding: 10px 5px;
+ min-width: 160px;
+ text-transform: uppercase;
+ border: 1px solid #b8008b;
+}
+
+.filterButtons:hover {
+ background-color: #d11fa4;
+}
+
+.filterButtonsSpec {
+ background-color: #fff;
+ color: #d11fa4;
+ border: 1px solid #d11fa4;
+}
+
+.filterButtonsSpec:hover {
+ background-color: #d11fa4;
+ color: #fff;
+}
+
+.filterButtonsContainerInner {
+ display: flex;
+ flex-direction: column;
+}
+
+/* ------------------------JobOpeningBody------------------------ */
+
+.jobOpeningImage {
+  width: 100%;
+  margin: 10px 0;
+}
+
+/* ------------------------ColleagueFeed------------------------ */
+
+.colleagueFeedContainer {
+  margin: 100px 15%;
+}
+
+.colleagueFeedInner{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-flow: wrap;
+  justify-content: space-between;
+}
+
+.colleagueFeedInnerLarge{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-flow: wrap;
+  justify-content: flex-start;
+}
+
+.colleaguePhoto {
+  box-sizing: border-box;
+  padding: 10px;
+  text-align: center;
+  object-fit: scale-down;
+  width: 20%;
+}
+
+.colleaguePhoto img{
+ border-radius: 50%;
+ width: 100%;
+ height: auto;
+}
+
+
+/* ------------------------BUTTONS------------------------ */
+.buttonContainer {
+ display: flex;
+ flex-direction: row;
+ justify-content: center;
+}
+
+.mediumButton {
+ background-color: #b8008b;
+ border-radius: 40px;
+ color: #fff;
+ padding: 15px 10px;
+ min-width: 160px;
+ outline: none;
+ cursor: pointer;
+ text-transform: uppercase;
+ border: none;
+ margin: 0 15px;
+ font-size: 12px;
+}
+
+.mediumButton:hover {
+ background-color: #d11fa4;
+}
+
+.shareButton {
+ background-color: #b8008b;
+}
+
+.shareButton:hover {
+ background-color: #d11fa4;
+}
+
+.navigationButtonTop {
+ margin: 20px 0 0;
+ border: none;
+ background-color: #fff;
+ padding: 10px;
+ color: #000;
+}
+
+.navigationButtonTop:hover {
+ background-color: #b8008b;
+ color: #fff;
+}
+
+
+/* ------------------------FOOTER------------------------ */
+footer{
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background-color: #F5F6F6;
+  height: auto;
+  width: 100%;
+  margin: 0;
+  padding: 0 30px;
+}
+
+/* obs dublett */
+.logoContainer{
+}
+
+.footerLinks{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 70%;
+  margin-top: 10px;
+}
+
+.footerLinks a{
+  font-weight: bold;
+  text-decoration: none;
+  color: #000000;
+  font-size: 12px;
+  margin-right: 10px;
+}
+
+.footerLinks a:hover{
+  text-decoration: underline;
+}
+
+footer p {
+  font-size: 11px;
+  margin: 10px 0 20px;
+}
+
+
+/* _________________MEDIA QUERIES________________ */
+@media screen and (max-width: 1030px) {
+
+  .jobTable p{
+    font-size: 14px;
+  }
+  .jobHeadlineTitle {
+    min-width: 350px;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 900px) and (min-width: 721px) {
+
+  .heroContainer {
+    padding: 0 100px;
+  }
+
+  .startPageTextContainer{
+    margin: 100px 5%;
+  }
+
+  .colleagueFeedContainer {
+    margin: 100px 5%;
+  }
+
+  .footerLinks{
+    width: 80%;
+  }
+
+}
+
+@media screen and (max-width: 720px) {
+
+  .headerLinks{
+    width: 70%;
+  }
+
+  .heroContainer {
+    padding: 0 50px;
+  }
+
+  .startPageTextContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px 5%;
+  }
+
+  .colleagueFeedContainer {
+    margin: 50px 5%;
+  }
+
+  .footerLinks{
+    width: 100%;
+    margin-top: 5px;
+  }
+
+}
